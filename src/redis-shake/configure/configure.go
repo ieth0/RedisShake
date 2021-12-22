@@ -23,6 +23,7 @@ type Configuration struct {
 	SourceRdbInput         []string `config:"source.rdb.input"`
 	SourceRdbParallel      int      `config:"source.rdb.parallel"`
 	SourceRdbSpecialCloud  string   `config:"source.rdb.special_cloud"`
+	SourceVersion          string   `config:"target.version"`
 	TargetAddress          string   `config:"target.address"`
 	TargetPasswordRaw      string   `config:"target.password_raw"`
 	TargetPasswordEncoding string   `config:"target.password_encoding"`
@@ -78,7 +79,6 @@ type Configuration struct {
 	// generated variables
 	SourceAddressList []string      // source address list
 	TargetAddressList []string      // target address list
-	SourceVersion     string        // source version
 	HeartbeatIp       string        // heartbeat ip
 	ShiftTime         time.Duration // shift
 	TargetReplace     bool          // to_replace
