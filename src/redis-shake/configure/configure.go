@@ -23,7 +23,7 @@ type Configuration struct {
 	SourceRdbInput         []string `config:"source.rdb.input"`
 	SourceRdbParallel      int      `config:"source.rdb.parallel"`
 	SourceRdbSpecialCloud  string   `config:"source.rdb.special_cloud"`
-	SourceVersion          string   `config:"target.version"`
+	SourceVersion          string   `config:"source.version"`
 	TargetAddress          string   `config:"target.address"`
 	TargetPasswordRaw      string   `config:"target.password_raw"`
 	TargetPasswordEncoding string   `config:"target.password_encoding"`
